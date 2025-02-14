@@ -5,7 +5,7 @@ const {login,signup}=require("../controllers/Auth");
 const{auth,isStudent,isAdmin}=require("../middlewares/auth");
 
 router.post("/login",login);
-router.post("/signup",signup);
+router.post("/signup",signup);  
 
 
 //testing protected routes for single middlewares...
