@@ -99,8 +99,14 @@ exports.login = async (req,res) =>{
                               expiresIn:"2h",
 
                             });
+
+    
+    user=user.toObject();
+  
     user.token=token;
+    
     user.password=undefined;
+   
 
     const options ={
         
